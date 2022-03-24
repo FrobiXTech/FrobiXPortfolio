@@ -1,0 +1,15 @@
+<button
+        class="btn btn-primary"
+        (click)="onToogleDisplay()">
+    Display Details
+</button>
+<p *ngIf="display">Secret Password = tuna</p>
+<hr>
+<ul>
+    <li
+        *ngFor="let log of logs; let i = index"
+        [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'white'}"
+        [ngClass]="{white : i > 4}">
+        {{log}}
+    </li>
+</ul>
