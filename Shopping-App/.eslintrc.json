@@ -23,7 +23,8 @@
                   "capIsNew": true,
                   "capIsNewExceptions": [
                         "Directive",
-                        "Component"
+                        "Component",
+                        "NgModule"
                 ],
                 "newIsCap": true,
                 "properties": true
