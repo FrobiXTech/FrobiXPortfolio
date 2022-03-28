@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "6fb9e0f9-82b8-4cf3-8e33-e7c3e7b95c76"
+    "analytics": "cc4c0ba6-f39f-42ee-8821-997a0ff09e68"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-Training": {
+    "Shopping-App": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-training",
+            "outputPath": "dist/shopping-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -34,8 +34,8 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Training:build:production"
+              "browserTarget": "Shopping-App:build:production"
             },
             "development": {
-              "browserTarget": "Angular-Training:build:development"
+              "browserTarget": "Shopping-App:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Training:build"
+            "browserTarget": "Shopping-App:build"
           }
         },
         "test": {
@@ -111,5 +111,5 @@
       }
     }
   },
-  "defaultProject": "Angular-Training"
+  "defaultProject": "Shopping-App"
 }
